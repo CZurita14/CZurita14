@@ -109,14 +109,6 @@ const christian = {
   <img src="https://streak-stats.demolab.com?user=CZurita14&theme=tokyonight&hide_border=true&background=0b0f17&ring=a78bfa&fire=fbbf24&currStreakLabel=22d3ee" alt="GitHub streak"/>
 </p>
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=CZurita14&bg_color=0b0f17&color=e6edf3&line=22d3ee&point=fbbf24&area=true&area_color=a78bfa&hide_border=true" width="100%" alt="Activity graph"/>
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=CZurita14&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&row=1&column=7" width="100%" alt="Trofeos"/>
-</p>
-
 <!-- Generados por .github/workflows/profile.yml -->
 <p align="center">
   <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="Contribuciones 3D"/>
