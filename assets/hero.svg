@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-label="Christian Zurita — AI Engineer &amp; Software Developer">
+  <defs>
+    <linearGradient id="border" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#fbbf24"/>
+      <animateTransform attributeName="gradientTransform" type="rotate" from="0 .5 .5" to="360 .5 .5" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="hub" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#4c1d95"/>
+    </radialGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#22d3ee" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M16 0H0V16" fill="none" stroke="#1b2333" stroke-width=".6"/>
+    </pattern>
+    <clipPath id="leftClip"><rect x="24" y="60" width="320" height="380" rx="6"/></clipPath>
+    <clipPath id="nameClip">
+      <rect x="384" y="56" width="0" height="44">
+        <animate attributeName="width" from="0" to="420" dur="1.4s" begin=".3s" fill="freeze" calcMode="discrete" values="0;28;56;84;112;140;168;196;224;252;280;308;336;364;392;420" keyTimes="0;.066;.133;.2;.266;.333;.4;.466;.533;.6;.666;.733;.8;.866;.933;1"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    text { font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; }
+    .k { fill: #7d8590; font-size: 12px; }
+    .v { fill: #e6edf3; font-size: 12px; font-weight: 600; }
+    .h { fill: #fbbf24; font-size: 11px; font-weight: 700; letter-spacing: 2px; }
+    .sep { stroke: #fbbf24; stroke-width: 2; }
+    .muted { fill: #7d8590; font-size: 10px; letter-spacing: 1.5px; }
+    .row { animation: in .55s ease-out both; }
+    @keyframes in { from { opacity: 0; transform: translateX(10px); } to { opacity: 1; transform: none; } }
+    .flow { stroke-dasharray: 4 10; animation: flow 1.2s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -28; } }
+    .blink { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .pulse { animation: pulse 2s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+    .node { animation: glow 3s ease-in-out infinite; }
+    @keyframes glow { 0%,100% { stroke-opacity: .5; } 50% { stroke-opacity: 1; } }
+  </style>
+
+  <!-- window -->
+  <rect x="1.5" y="1.5" width="897" height="517" rx="16" fill="#0b0f17" stroke="url(#border)" stroke-width="2"/>
+  <path d="M2 40H898" stroke="#1b2333"/>
+  <circle cx="24" cy="21" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="21" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="21" r="6" fill="#27c93f"/>
+  <rect x="96" y="8" width="104" height="32" fill="#0f1522"/>
+  <path d="M96 9H200" stroke="#fbbf24" stroke-width="2"/>
+  <text x="148" y="28" text-anchor="middle" fill="#e6edf3" font-size="11">pumanet.ts</text>
+  <text x="250" y="28" text-anchor="middle" fill="#7d8590" font-size="11">stack.json</text>
+  <text x="340" y="28" text-anchor="middle" fill="#7d8590" font-size="11">agents.py</text>
+  <text x="790" y="28" text-anchor="end" fill="#7d8590" font-size="11">UTC-5</text>
+  <circle class="pulse" cx="812" cy="24" r="4" fill="#34d399"/>
+  <text x="822" y="28" fill="#34d399" font-size="11">LIVE</text>
+
+  <!-- left panel: agent graph -->
+  <g clip-path="url(#leftClip)">
+    <rect x="24" y="60" width="320" height="380" fill="#0f1522"/>
+    <rect x="24" y="60" width="320" height="380" fill="url(#grid)"/>
+    <rect x="24" y="0" width="320" height="70" fill="url(#scan)">
+      <animate attributeName="y" from="40" to="440" dur="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g stroke="#fbbf24" stroke-width="2" fill="none">
+    <path d="M24 76V60H40"/><path d="M328 60H344V76"/>
+    <path d="M24 424V440H40"/><path d="M328 440H344V424"/>
+  </g>
+  <text x="40" y="82" class="muted">AGENT.GRAPH</text>
+  <text x="328" y="82" class="muted" text-anchor="end" fill="#fbbf24" style="fill:#fbbf24">NODES 06</text>
+
+  <!-- orbit -->
+  <circle cx="184" cy="250" r="138" fill="none" stroke="#a78bfa" stroke-opacity=".35" stroke-dasharray="2 8">
+    <animateTransform attributeName="transform" type="rotate" from="0 184 250" to="360 184 250" dur="30s" repeatCount="indefinite"/>
+  </circle>
+  <!-- ring between nodes -->
+  <path d="M184 145L275 197.5L275 302.5L184 355L93 302.5L93 197.5Z" fill="none" stroke="#22d3ee" stroke-opacity=".18"/>
+  <!-- spokes -->
+  <g stroke="#22d3ee" stroke-width="1.5" class="flow">
+    <path d="M184 250L184 145"/><path d="M184 250L275 197.5"/><path d="M184 250L275 302.5"/>
+    <path d="M184 250L184 355"/><path d="M184 250L93 302.5"/><path d="M184 250L93 197.5"/>
+  </g>
+  <!-- packets -->
+  <circle r="3.5" fill="#fbbf24"><animateMotion dur="2.2s" repeatCount="indefinite" path="M184 250L275 197.5"/></circle>
+  <circle r="3.5" fill="#f472b6"><animateMotion dur="2.6s" begin=".7s" repeatCount="indefinite" path="M93 302.5L184 250"/></circle>
+  <circle r="3.5" fill="#34d399"><animateMotion dur="2s" begin="1.2s" repeatCount="indefinite" path="M184 250L184 355"/></circle>
+  <circle r="3" fill="#22d3ee"><animateMotion dur="3s" begin=".4s" repeatCount="indefinite" path="M184 145L184 250"/></circle>
+
+  <!-- nodes -->
+  <g font-size="10" font-weight="700" text-anchor="middle">
+    <g class="node" style="animation-delay:0s"><circle cx="184" cy="145" r="20" fill="#0b0f17" stroke="#22d3ee" stroke-width="2"/><text x="184" y="149" fill="#22d3ee">LLM</text></g>
+    <g class="node" style="animation-delay:.5s"><circle cx="275" cy="197.5" r="20" fill="#0b0f17" stroke="#a78bfa" stroke-width="2"/><text x="275" y="201.5" fill="#a78bfa">RAG</text></g>
+    <g class="node" style="animation-delay:1s"><circle cx="275" cy="302.5" r="20" fill="#0b0f17" stroke="#34d399" stroke-width="2"/><text x="275" y="306.5" fill="#34d399">ML</text></g>
+    <g class="node" style="animation-delay:1.5s"><circle cx="184" cy="355" r="20" fill="#0b0f17" stroke="#fbbf24" stroke-width="2"/><text x="184" y="359" fill="#fbbf24">IoT</text></g>
+    <g class="node" style="animation-delay:2s"><circle cx="93" cy="302.5" r="20" fill="#0b0f17" stroke="#f472b6" stroke-width="2"/><text x="93" y="306.5" fill="#f472b6">API</text></g>
+    <g class="node" style="animation-delay:2.5s"><circle cx="93" cy="197.5" r="20" fill="#0b0f17" stroke="#60a5fa" stroke-width="2"/><text x="93" y="201.5" fill="#60a5fa">DATA</text></g>
+  </g>
+  <!-- hub -->
+  <circle cx="184" cy="250" r="30" fill="none" stroke="#a78bfa" stroke-width="2">
+    <animate attributeName="r" values="30;62" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values=".8;0" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="184" cy="250" r="30" fill="url(#hub)" stroke="#c4b5fd" stroke-width="1.5"/>
+  <text x="184" y="248" text-anchor="middle" fill="#fff" font-size="11" font-weight="800">PUMA</text>
+  <text x="184" y="261" text-anchor="middle" fill="#ddd6fe" font-size="9" font-weight="700" letter-spacing="2">NET</text>
+
+  <text x="40" y="420" fill="#fbbf24" font-size="12" font-weight="700">&gt; <tspan fill="#e6edf3">pumanet --orchestrate</tspan><tspan class="blink" fill="#22d3ee"> ▌</tspan></text>
+
+  <!-- divider -->
+  <path d="M364 60V440" stroke="#1b2333"/>
+
+  <!-- right panel -->
+  <g clip-path="url(#nameClip)">
+    <text x="384" y="90" fill="#e6edf3" font-size="27" font-weight="800" letter-spacing="5">CHRISTIAN ZURITA</text>
+  </g>
+  <text x="870" y="72" text-anchor="end" fill="#34d399" font-size="10">open to build <tspan class="pulse">●</tspan></text>
+  <g class="row" style="animation-delay:1.6s">
+    <rect x="384" y="100" width="262" height="20" rx="3" fill="#164e63" fill-opacity=".7"/>
+    <text x="392" y="114" fill="#a5f3fc" font-size="11" font-weight="700">AI Engineer &amp; Software Developer</text>
+  </g>
+
+  <g class="row" style="animation-delay:1.9s">
+    <path class="sep" d="M384 136V148"/><text x="394" y="146" class="h">IDENTITY</text>
+  </g>
+  <g class="row" style="animation-delay:2.0s"><text x="400" y="166" class="k">role</text><path d="M484 155V169" stroke="#30363d"/><text x="494" y="166" class="v">Desarrollador de Software &amp; IA</text></g>
+  <g class="row" style="animation-delay:2.1s"><text x="400" y="184" class="k">origin</text><path d="M484 173V187" stroke="#30363d"/><text x="494" y="184" class="v">Ambato, Ecuador</text></g>
+  <g class="row" style="animation-delay:2.2s"><text x="400" y="202" class="k">focus</text><path d="M484 191V205" stroke="#30363d"/><text x="494" y="202" class="v">Agentes IA · Machine Learning · IoT</text></g>
+
+  <g class="row" style="animation-delay:2.4s">
+    <path class="sep" d="M384 220V232"/><text x="394" y="230" class="h">STACK</text>
+  </g>
+  <g class="row" style="animation-delay:2.5s"><text x="400" y="250" class="k">backend</text><path d="M484 239V253" stroke="#30363d"/><text x="494" y="250" class="v">Python · FastAPI · Bun · Node.js</text></g>
+  <g class="row" style="animation-delay:2.6s"><text x="400" y="268" class="k">frontend</text><path d="M484 257V271" stroke="#30363d"/><text x="494" y="268" class="v">React · TypeScript · Tailwind CSS</text></g>
+  <g class="row" style="animation-delay:2.7s"><text x="400" y="286" class="k">ml / data</text><path d="M484 275V289" stroke="#30363d"/><text x="494" y="286" class="v">scikit-learn · XGBoost · pandas</text></g>
+  <g class="row" style="animation-delay:2.8s"><text x="400" y="304" class="k">iot</text><path d="M484 293V307" stroke="#30363d"/><text x="494" y="304" class="v">ESP32 · Streamlit dashboards</text></g>
+
+  <g class="row" style="animation-delay:3.0s">
+    <path class="sep" d="M384 322V334"/><text x="394" y="332" class="h">WORKBENCH</text>
+  </g>
+  <g class="row" style="animation-delay:3.1s"><text x="400" y="352" class="k">tools</text><path d="M484 341V355" stroke="#30363d"/><text x="494" y="352" class="v">VS Code · Git · Docker · Jupyter</text></g>
+  <g class="row" style="animation-delay:3.2s"><text x="400" y="370" class="k">ai</text><path d="M484 359V373" stroke="#30363d"/><text x="494" y="370" class="v">LLMs · Agentes · MCP · Ollama</text></g>
+
+  <g class="row" style="animation-delay:3.4s">
+    <path class="sep" d="M384 388V400"/><text x="394" y="398" class="h">CONTACT</text>
+  </g>
+  <g class="row" style="animation-delay:3.5s"><text x="400" y="418" class="k">mail</text><path d="M484 407V421" stroke="#30363d"/><text x="494" y="418" class="v">christianzurita377@gmail.com</text></g>
+  <g class="row" style="animation-delay:3.6s"><text x="400" y="436" class="k">social</text><path d="M484 425V439" stroke="#30363d"/><text x="494" y="436" class="v">@CZurita14 <tspan fill="#7d8590">·</tspan> <tspan fill="#60a5fa">in/christian-zurita</tspan></text></g>
+
+  <!-- bottom bar -->
+  <rect x="24" y="458" width="852" height="44" rx="8" fill="#0f1522" stroke="#1b2333"/>
+  <path d="M40 470V490" stroke="#a78bfa" stroke-width="3"/>
+  <text x="52" y="485" fill="#a78bfa" font-size="11" font-weight="700" letter-spacing="2">NOW BUILDING</text>
+  <g font-size="11">
+    <rect x="186" y="468" width="168" height="24" rx="12" fill="none" stroke="#34d399" stroke-opacity=".6"/>
+    <circle class="pulse" cx="202" cy="480" r="3.5" fill="#34d399"/><text x="212" y="484" fill="#a7f3d0">PumaNet · Orquestador</text>
+    <rect x="366" y="468" width="186" height="24" rx="12" fill="none" stroke="#a78bfa" stroke-opacity=".6"/>
+    <circle class="pulse" cx="382" cy="480" r="3.5" fill="#a78bfa" style="animation-delay:.6s"/><text x="392" y="484" fill="#ddd6fe">Generador de Recursos IA</text>
+    <rect x="564" y="468" width="124" height="24" rx="12" fill="none" stroke="#fbbf24" stroke-opacity=".6"/>
+    <circle class="pulse" cx="580" cy="480" r="3.5" fill="#fbbf24" style="animation-delay:1.2s"/><text x="590" y="484" fill="#fde68a">Sílabos IA</text>
+  </g>
+  <text x="852" y="485" text-anchor="end" fill="#7d8590" font-size="10">more below ↓<tspan class="blink" fill="#34d399"> █</tspan></text>
+</svg>
