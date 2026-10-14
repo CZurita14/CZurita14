@@ -1,6 +1,6 @@
 <!-- Header -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:22d3ee,50:a78bfa,100:fbbf24&height=200&section=header&text=Christian%20Zurita&fontSize=52&fontColor=ffffff&fontAlignY=36&desc=AI%20Engineer%20%C2%B7%20Software%20Developer%20%C2%B7%20Ambato%2C%20Ecuador&descAlignY=58&descSize=16&animation=fadeIn" width="100%" alt="Christian Zurita"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:22d3ee,50:a78bfa,100:fbbf24&height=200&section=header&text=Christian%20Zurita&fontSize=52&fontColor=0b0f17&fontAlignY=36&desc=AI%20Engineer%20%C2%B7%20Software%20Developer%20%C2%B7%20Ambato%2C%20Ecuador&descAlignY=58&descSize=16" width="100%" alt="Christian Zurita"/>
 </p>
 
 <p align="center">
